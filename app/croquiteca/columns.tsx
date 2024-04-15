@@ -29,6 +29,14 @@ export type Route = {
 
 export const columns: ColumnDef<Route>[] = [
   {
+    accessorKey: "city",
+    header: "Cidade",
+  },
+  {
+    accessorKey: "rock",
+    header: "Pedra",
+  },
+  {
     accessorKey: "graduation",
     header: ({ column }) => {
       return (
@@ -41,6 +49,10 @@ export const columns: ColumnDef<Route>[] = [
         </Button>
       );
     },
+  },
+  {
+    accessorKey: "route",
+    header: "Rota",
   },
   {
     accessorKey: "size",
