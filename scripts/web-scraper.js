@@ -70,7 +70,7 @@ const fs = require('fs');
     }
   }
   
-    fs.writeFile("./croquiteca.json", JSON.stringify(list), function(err) {
+    fs.writeFile("./scripts/data.json", JSON.stringify(list), function(err) {
       if(err) {
           return console.log(err);
       }
